@@ -1,0 +1,38 @@
+[
+  {
+    "question": "What is a static website?",
+    "answer": "A static website consists of web pages with fixed content that does not change unless it is manually updated by a developer or designer. These websites are built using HTML, CSS, and JavaScript, and are fast, secure, and cost-effective."
+  },
+  {
+    "question": "Does the website work well on mobile and tablet devices?",
+    "answer": "Yes, our websites are fully responsive and optimized for mobile, tablet, and desktop screens, ensuring a seamless experience on all devices."
+  },
+  {
+    "question": "Static sites are best suited for which types of businesses?",
+    "answer": "Static websites are ideal for small businesses, startups, personal portfolios, events, landing pages, and businesses that need fast, low-maintenance informational sites."
+  },
+  {
+    "question": "How much does a single-page static website cost in India?",
+    "answer": "The cost of a single-page static website in India typically ranges from ₹999 to ₹4999, depending on design layout and complexity."
+  },
+  {
+    "question": "How much does a 5-page website cost in India?",
+    "answer": "A 5-page static website typically ranges from ₹3,000 to ₹15,000 depending on design quality, features like contact forms, domain, hosting, and custom requirements."
+  },
+  {
+    "question": "What factors influence the cost of static website design?",
+    "answer": "Cost is influenced by the number of pages, design complexity, responsiveness, custom elements, SEO optimization, and whether domain and hosting are included."
+  },
+  {
+    "question": "What is web hosting or web space in website development?",
+    "answer": "Web hosting is the storage space on a server where your website files are stored. It allows your site to be accessed online."
+  },
+  {
+    "question": "What is a domain and why does it matter?",
+    "answer": "A domain is your website's online address (e.g., buildstatic.com). It's essential for users to find and access your site easily."
+  },
+  {
+    "question": "How does a static website differ from a dynamic website?",
+    "answer": "A static website shows the same content to every visitor and doesn't require server-side scripting. In contrast, a dynamic website generates content on the fly based on user interactions or data."
+  }
+]

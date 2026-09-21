@@ -1,0 +1,77 @@
+{
+  "packages": [
+    {
+      "name": "Basic",
+      "price": "₹4999/-",
+      "highlight": false
+    },
+    {
+      "name": "Business",
+      "price": "₹7999/-",
+      "highlight": false
+    },
+    {
+      "name": "Professional",
+      "price": "₹14,999/-",
+      "highlight": true
+    }
+  ],
+  "features": [
+    {
+      "name": "Home Page",
+      "values": [true, true, true]
+    },
+    {
+      "name": "Number of Pages",
+      "values": ["5", "7", "15"]
+    },
+    {
+      "name": "Navigation System",
+      "values": [true, true, true]
+    },
+    {
+      "name": "Domain",
+      "values": ["-", "Domain (.in)", "Domain (.com/.in/.net)"]
+    },
+    {
+      "name": "Web space (Free for 1 year)",
+      "values": ["100MB", "1GB", "5GB"]
+    },
+    {
+      "name": "Number of Email Ids",
+      "values": ["1", "1", "2"]
+    },
+    {
+      "name": "Inquiry Page",
+      "values": ["1", "1", "1"]
+    },
+    {
+      "name": "Mobile Tablet Friendly",
+      "values": [false, true, true]
+    },
+    {
+      "name": "Social Media Integration",
+      "values": [false, true, true]
+    },
+    {
+      "name": "Google Map Integration",
+      "values": [false, false, true]
+    },
+    {
+      "name": "Live Chat Integration",
+      "values": [false, false, false]
+    },
+    {
+      "name": "WhatsApp Integration",
+      "values": [false, false, true]
+    },
+    {
+      "name": "Extra Pages",
+      "values": [
+        "₹500 for Each page",
+        "₹500 for Each page",
+        "₹500 for Each page"
+      ]
+    }
+  ]
+}

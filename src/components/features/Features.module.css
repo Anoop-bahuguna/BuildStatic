@@ -1,0 +1,121 @@
+:root {
+    --color-primary: #4F46E5;
+    --color-background: #ffffff;
+    --color-text: #000000;
+    --color-heading: #1a1a1a;
+    --color-border: #e0e0e0;
+    --color-hover: #4338ca;
+  }
+  
+  .features {
+    background-color: var(--color-background);
+    padding: 4rem 1rem;
+    color: var(--color-text);
+    text-align: center;
+  }
+  
+  .heading {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--color-heading);
+    margin-bottom: 2rem;
+  }
+  
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+  }
+  
+  .card {
+    background-color: var(--color-background);
+    border: 2px solid var(--color-primary);
+    border-radius: 12px;
+    padding: 2rem 1.5rem;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+    position: relative;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    border-color: var(--color-hover);
+  }
+  
+  .icon {
+    background-color: var(--color-primary);
+    color: var(--color-background);
+    font-size: 1.5rem;
+    border-radius: 8px;
+    padding: 0.5rem;
+    display: inline-block;
+    position: absolute;
+    top: -18px;
+    right: -18px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  }
+  
+  .title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: 2.5rem;
+    margin-bottom: 0.75rem;
+    color: var(--color-heading);
+  }
+  
+  .text {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: var(--color-text);
+  }
+  
+  /* ✅ Responsive Improvements */
+  @media (max-width: 768px) {
+    .services {
+      padding: 2rem 1rem;
+    }
+    .heading {
+      font-size: 1.5rem;
+    }
+  
+  
+    .card {
+      padding: 1.5rem 1rem;
+    }
+  
+    .icon {
+      font-size: 1.3rem;
+      top: -14px;
+      right: -14px;
+    }
+  
+    .title {
+      font-size: 1.1rem;
+    }
+  
+    .text {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .icon {
+      font-size: 1.1rem;
+    }
+    .heading {
+      font-size: 1.25rem;
+    }
+  
+  
+    .title {
+      font-size: 1rem;
+    }
+  
+    .text {
+      font-size: 0.85rem;
+    }
+  }
+  

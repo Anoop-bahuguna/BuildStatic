@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Static Site Builder",
+    "description": "Quickly build blazing-fast static websites with our intuitive interface. Ideal for portfolios, landing pages, and documentation sites with zero backend.",
+    "icon": "FaHtml5"
+  },
+  {
+    "title": "Responsive Layouts",
+    "description": "Create responsive designs that look perfect on all devices. Our layout system ensures your static pages adapt beautifully.",
+    "icon": "FaLaptopCode"
+  },
+  {
+    "title": "Optimized Deployment",
+    "description": "Export and deploy your static sites effortlessly to platforms like GitHub Pages, Netlify, or Vercel with one click.",
+    "icon": "FaRocket"
+  },
+  {
+    "title": "Custom Design Tools",
+    "description": "Design with style! Use our custom components and theme editor to match your brand's look — fast, clean, and beautiful.",
+    "icon": "FaPalette"
+  }
+]
