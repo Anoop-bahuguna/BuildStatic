@@ -1,29 +1,37 @@
-// staticSitesData.js
+
+import smallBusiness from "../../images/staticSites/small-business.jpg";
+import personal from "../../images/staticSites/personal.jpg";
+import informational from "../../images/staticSites/informational.jpg";
+import portfolio from "../../images/staticSites/portfolio.jpg";
+import events from "../../images/staticSites/events.jpg";
+import landing from "../../images/staticSites/landing.jpg";
+
 const staticSitesData = [
   {
     title: "Small business websites",
-    image: "src/images/staticSites/small-business.jpg",
+    image: smallBusiness,
   },
   {
     title: "Personal websites",
-    image: "src/images/staticSites/personal.jpg",
+    image: personal,
   },
   {
     title: "Informational websites",
-    image: "src/images/staticSites/informational.jpg",
+    image: informational,
   },
   {
     title: "Portfolio websites",
-    image: "src/images/staticSites/portfolio.jpg",
+    image: portfolio,
   },
   {
     title: "Events websites",
-    image: "src/images/staticSites/events.jpg",
+    image: events,
   },
   {
     title: "Landing pages",
-    image: "src/images/staticSites/landing.jpg",
+    image: landing,
   },
 ];
 
 export default staticSitesData;
+
