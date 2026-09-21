@@ -4,8 +4,6 @@ import styles from "./PricingSection.module.css";
 import { FaCheck, FaTimes } from "react-icons/fa";
 
 const PricingSection = () => {
-  const mostPopularIndex = pricingData.packages.findIndex((p) => p.highlight);
-
   return (
     <section className={styles.pricingSection} id="pricing">
       <h2 className={styles.heading}> Pricing Plans</h2>

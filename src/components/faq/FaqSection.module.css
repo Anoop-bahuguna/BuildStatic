@@ -11,12 +11,13 @@
 .faqSection {
   background-color: var(--color-background);
   padding: 3rem 1rem;
-  max-width: 70%;
+  width: min(900px, calc(100% - 2rem));
+  max-width: 100%;
   margin: 0 auto;
 }
 
 .heading {
-  font-size: 2rem;
+  font-size: clamp(1.5rem, 4vw, 2rem);
   font-weight: bold;
   color: var(--color-heading);
   text-align: center;
@@ -50,10 +51,16 @@
   justify-content: space-between;
   align-items: center;
   border: none;
+  line-height: 1.4;
 }
 
 .question:hover {
   color: var(--color-background);
+}
+
+.question:focus-visible {
+  outline: 3px solid var(--color-primary);
+  outline-offset: -3px;
 }
 
 .toggleIcon {
@@ -84,7 +91,7 @@
 
 @media (max-width: 480px) {
   .faqSection {
-    padding: 2rem 1rem;
+    padding: 2rem 0;
   }
 
   .heading {

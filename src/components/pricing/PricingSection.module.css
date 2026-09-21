@@ -13,7 +13,7 @@
 .pricingSection {
   background-color: var(--color-background);
   color: var(--color-text);
-  padding: 3rem 1rem;
+  padding: clamp(2.5rem, 6vw, 3rem) 1rem;
   text-align: center;
 }
 
@@ -30,6 +30,7 @@
   border-radius: 12px;
   width: 100%;
   max-width: 100%;
+  -webkit-overflow-scrolling: touch;
 }
 
 .pricingTable {
@@ -78,6 +79,7 @@
 
 /* Highlight the most popular plan */
 .highlightPlan {
+  position: relative;
   background-color: var(--color-highlight);
   border: 2px solid var(--color-primary);
   padding-top: 1rem; /* Added to make space for the label */
@@ -85,18 +87,21 @@
 
 .highlightPlan::before {
   content: "Most Popular";
+  position: absolute;
+  top: -0.75rem;
+  left: 50%;
   transform: translateX(-50%);
+  white-space: nowrap;
   background-color: var(--color-primary);
   color: #fff;
   font-size: 0.75rem;
   padding: 0.25rem 0.5rem;
   border-radius: 4px;
- 
 }
 
 @media (max-width: 1024px) {
   .pricingTable {
-    min-width: 100%;
+    min-width: 720px;
   }
 
   .pricingTable th,
@@ -127,17 +132,20 @@
 
   .highlightPlan::before {
     font-size: 0.65rem;
-   
   }
 }
 
 @media (max-width: 480px) {
   .pricingSection {
-    padding: 2rem 0.5rem;
+    padding: 2rem 0;
   }
 
   .heading {
     font-size: 1.25rem;
+  }
+
+  .tableWrapper {
+    border-radius: 0;
   }
 
   .pricingTable th,
@@ -156,6 +164,5 @@
 
   .highlightPlan::before {
     font-size: 0.6rem;
-    
   }
 }

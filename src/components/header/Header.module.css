@@ -9,7 +9,7 @@
 .header-container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 16px;
+  padding: 0 1rem;
   height: 60px;
   display: flex;
   align-items: center;
@@ -46,18 +46,24 @@
 /* Hamburger Menu Button */
 .menu-toggle {
   display: none;
- flex-direction: column;
+  flex-direction: column;
   justify-content: space-between;
   width: 24px;
   height: 18px;
   border: none;
-  background: none;
+  background: transparent;
   cursor: pointer;
+  padding: 0;
+}
+
+.menu-toggle:hover,
+.menu-toggle:focus-visible {
+  background: transparent;
 }
 
 .menu-toggle .bar {
   height: 3px;
-   width: 100%;
+  width: 100%;
   background-color: var(--color-primary);
   border-radius: 2px;
 }
@@ -68,11 +74,12 @@
     position: absolute;
     top: 60px;
     left: 0;
-    right:  0;
+    right: 0;
     flex-direction: column;
     background-color: var(--color-background);
     padding: 16px;
     display: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08);
   }
 
   .nav.open {
@@ -81,6 +88,19 @@
 
   .menu-toggle {
     display: flex;
-   
+  }
+}
+
+@media (max-width: 480px) {
+  .header-container {
+    height: 56px;
+  }
+
+  .logo {
+    font-size: 1.6rem;
+  }
+
+  .nav {
+    top: 56px;
   }
 }

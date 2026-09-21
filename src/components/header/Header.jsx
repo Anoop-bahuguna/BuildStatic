@@ -19,14 +19,19 @@ const Header = () => {
           <a href="#services">Services</a>
         </nav>
 
-        <div
+        <button
+          type="button"
           className={styles["menu-toggle"]}
           onClick={() => setMenuOpen(!menuOpen)}
+          aria-label={
+            menuOpen ? "Close navigation menu" : "Open navigation menu"
+          }
+          aria-expanded={menuOpen}
         >
           <b className={styles.bar}></b>
           <span className={styles.bar}></span>
           <span className={styles.bar}></span>
-        </div>
+        </button>
       </div>
     </header>
   );

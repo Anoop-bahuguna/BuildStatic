@@ -1,123 +1,131 @@
 .hero {
-    position: relative;
-    background-size:cover;
-    background-position:center;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  }
-  
-  .overlay {
-    background: rgba(0, 0, 0, 0.6); /* semi-transparent black overlay */
-    width: 100%;
-    height: 100%;
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .content {
-    max-width: 900px;
-    color: var(--color-background); /* white text over dark background */
-    text-align: center;
-  }
-  
-  .greeting {
-    background-color: rgba(255, 255, 255, 0.2);
-    padding: 6px 16px;
-    display: inline-block;
-    border-radius: 6px;
-    font-weight: 500;
-    margin-bottom: 16px;
-    font-size: 0.95rem;
-  }
-  
-  .title {
-    font-size: 3.5rem;
-    font-weight: 800;
-    margin-bottom: 16px;
-    color: var(--color-background);
-  }
-  
-  .subtitle {
-    font-size: 1.25rem;
-    margin-bottom: 24px;
-    color: #e5e5e5;
-  }
-  
-  .highlight {
-    background-color: var(--color-primary);
-    color: var(--color-background);
-    padding: 12px 20px;
-    font-weight: 600;
-    border-radius: 8px;
-    display: inline-block;
-    margin-bottom: 30px;
-    font-size: 1rem;
-  }
-  
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  min-height: min(720px, );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.6); /* semi-transparent black overlay */
+  width: 100%;
+  height: 100%;
+  padding: clamp(4rem, 8vw, 6rem) 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  width: min(900px, 100%);
+  color: var(--color-background); /* white text over dark background */
+  text-align: center;
+}
+
+.greeting {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 6px 16px;
+  display: inline-block;
+  border-radius: 6px;
+  font-weight: 500;
+  margin-bottom: 16px;
+  font-size: 0.95rem;
+}
+
+.title {
+  font-size: clamp(2.25rem, 6vw, 3.5rem);
+  font-weight: 800;
+  margin-bottom: 16px;
+  color: var(--color-background);
+}
+
+.subtitle {
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  margin-bottom: 24px;
+  color: #e5e5e5;
+}
+
+.highlight {
+  background-color: var(--color-primary);
+  color: var(--color-background);
+  padding: 12px 20px;
+  font-weight: 600;
+  border-radius: 8px;
+  display: inline-block;
+  margin-bottom: 30px;
+  font-size: 1rem;
+  max-width: 100%;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.primary,
+.secondary {
+  padding: 12px 28px;
+  font-size: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 140px;
+  font-weight: 600;
+}
+
+.primary {
+  background-color: var(--color-background);
+  color: var(--color-primary);
+  border: 2px solid var(--color-background);
+}
+
+.primary:hover {
+  background-color: transparent;
+  color: var(--color-background);
+  border-color: var(--color-background);
+}
+
+.secondary {
+  background-color: transparent;
+  color: var(--color-background);
+  border: 2px solid var(--color-background);
+}
+
+.secondary:hover {
+  background-color: var(--color-primary);
+  color: var(--color-background);
+  border-color: var(--color-primary);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
   .buttons {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 16px;
+    flex-direction: column;
+    align-items: stretch;
   }
-  
+
   .primary,
   .secondary {
-    padding: 12px 28px;
-    font-size: 1rem;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    min-width: 140px;
-    font-weight: 600;
+    width: 100%;
   }
-  
-  .primary {
-    background-color: var(--color-background);
-    color: var(--color-primary);
-    border: 2px solid var(--color-background);
+}
+
+@media (max-width: 480px) {
+  .hero {
+    min-height: 620px;
   }
-  
-  .primary:hover {
-    background-color: transparent;
-    color: var(--color-background);
-    border-color: var(--color-background);
+
+  .greeting {
+    font-size: 0.85rem;
   }
-  
-  .secondary {
-    background-color: transparent;
-    color: var(--color-background);
-    border: 2px solid var(--color-background);
+
+  .highlight {
+    padding: 0.75rem 1rem;
+    font-size: 0.9rem;
   }
-  
-  .secondary:hover {
-    background-color: var(--color-primary);
-    color: var(--color-background);
-    border-color: var(--color-primary);
-  }
-  
-  /* Responsive adjustments */
-  @media (max-width: 768px) {
-    .title {
-      font-size: 2.5rem;
-    }
-  
-    .subtitle {
-      font-size: 1.1rem;
-    }
-  
-    .buttons {
-      flex-direction: column;
-    }
-  
-    .primary,
-    .secondary {
-      width: 100%;
-    }
-  }
-  
+}
